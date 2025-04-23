@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+gz.dmndev.restaurant.commonsecurity.config.ResourceServerConfig,\
+gz.dmndev.restaurant.commonsecurity.config.SecurityProperties

@@ -1,0 +1,18 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+    import: ""
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+
+  data:
+    mongodb:
+      database: testdb
+
+eureka:
+  client:
+    enabled: false

@@ -3,11 +3,3 @@ spring:
     name: api-gateway
   config:
     import: "configserver:http://localhost:8888"
-
-springdoc:
-  swagger-ui:
-    urls:
-      - name: gateway-service
-        url: /v3/api-docs
-      - name: menu-service
-        url: /api/menu/v3/api-docs

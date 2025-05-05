@@ -14,5 +14,6 @@
 
     <modules>
         <module>restaurant-common-security</module>
+        <module>restaurant-common-messaging</module>
     </modules>
 </project>

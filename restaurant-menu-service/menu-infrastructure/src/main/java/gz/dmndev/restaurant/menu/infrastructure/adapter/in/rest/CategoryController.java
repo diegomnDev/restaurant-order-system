@@ -71,7 +71,7 @@ public class CategoryController {
         .getCategoryById(id)
         .map(
             existingCategory -> {
-              mapper.updateDomainFromRequest(existingCategory, request);
+              existingCategory = mapper.updateDomainFromRequest(existingCategory, request);
               Category updatedCategory = updateCategoryUseCase.updateCategory(existingCategory);
               return ResponseEntity.ok(mapper.toResponse(updatedCategory));
             })

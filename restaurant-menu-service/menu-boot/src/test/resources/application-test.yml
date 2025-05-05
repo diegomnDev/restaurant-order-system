@@ -16,3 +16,7 @@ spring:
 eureka:
   client:
     enabled: false
+
+restaurant:
+  security:
+    enabled: false

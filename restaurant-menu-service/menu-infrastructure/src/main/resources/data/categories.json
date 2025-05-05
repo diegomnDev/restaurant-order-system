@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cat-starters",
+    "name": "Starters",
+    "description": "Tasty bites to begin your meal.",
+    "displayOrder": 1,
+    "active": true
+  },
+  {
+    "id": "cat-burgers",
+    "name": "Burgers",
+    "description": "Gourmet burgers made with premium ingredients.",
+    "displayOrder": 2,
+    "active": true
+  },
+  {
+    "id": "cat-nonburgers",
+    "name": "Non-Burger Mains",
+    "description": "Main dishes beyond burgers.",
+    "displayOrder": 3,
+    "active": true
+  },
+  {
+    "id": "cat-sides",
+    "name": "Fries & Sides",
+    "description": "Perfect sides to complete your meal.",
+    "displayOrder": 4,
+    "active": true
+  },
+  {
+    "id": "cat-desserts",
+    "name": "Desserts",
+    "description": "Sweet endings to your gourmet experience.",
+    "displayOrder": 5,
+    "active": true
+  },
+  {
+    "id": "cat-drinks",
+    "name": "Drinks",
+    "description": "Refreshing beverages for every taste.",
+    "displayOrder": 6,
+    "active": true
+  },
+  {
+    "id": "cat-specials",
+    "name": "Specials",
+    "description": "Limited-time chef specials.",
+    "displayOrder": 7,
+    "active": true
+  },
+  {
+    "id": "cat-kids",
+    "name": "Kids Menu",
+    "description": "Delicious and fun meals for children.",
+    "displayOrder": 8,
+    "active": true
+  }
+]

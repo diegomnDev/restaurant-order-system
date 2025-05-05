@@ -5,7 +5,6 @@ import gz.dmndev.restaurant.menu.infrastructure.adapter.in.rest.dto.CategoryRequ
 import gz.dmndev.restaurant.menu.infrastructure.adapter.in.rest.dto.CategoryResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
 
 @Mapper(componentModel = "spring")
 public interface CategoryRestMapper {
@@ -14,6 +13,22 @@ public interface CategoryRestMapper {
 
   CategoryResponse toResponse(Category domain);
 
-  @Mapping(target = "id", ignore = true)
-  void updateDomainFromRequest(@MappingTarget Category category, CategoryRequest request);
+  default Category updateDomainFromRequest(Category category, CategoryRequest request) {
+    if (request == null) return category;
+
+    Category.Builder builder = category.toBuilder();
+
+    if (request.getName() != null) {
+      builder.name(request.getName());
+    }
+    if (request.getDescription() != null) {
+      builder.description(request.getDescription());
+    }
+    if (request.getDisplayOrder() != null) {
+      builder.displayOrder(request.getDisplayOrder());
+    }
+    builder.active(request.isActive());
+
+    return builder.build();
+  }
 }

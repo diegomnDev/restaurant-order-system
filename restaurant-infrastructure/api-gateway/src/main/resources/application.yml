@@ -7,7 +7,7 @@ spring:
 springdoc:
   swagger-ui:
     urls:
-      -   name: gateway-service
-          url: /v3/api-docs
-      -   name: menu-service
-          url: /api/menu/v3/api-docs
+      - name: gateway-service
+        url: /v3/api-docs
+      - name: menu-service
+        url: /api/menu/v3/api-docs

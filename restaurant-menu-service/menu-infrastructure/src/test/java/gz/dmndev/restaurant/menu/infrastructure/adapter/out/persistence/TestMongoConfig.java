@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories(
-    basePackages = "gz.dmndev.restaurant.menuinfrastructure.adapter.out.persistence.repository")
+    basePackages = "gz.dmndev.restaurant.menu.infrastructure.adapter.out.persistence.repository")
 public class TestMongoConfig {}

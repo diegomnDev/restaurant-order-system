@@ -3,6 +3,15 @@ package gz.dmndev.restaurant.menu.domain.model;
 public record Category(
     String id, String name, String description, int displayOrder, boolean active) {
 
+  public Builder toBuilder() {
+    return new Builder()
+        .id(id)
+        .name(name)
+        .description(description)
+        .displayOrder(displayOrder)
+        .active(active);
+  }
+
   public static Builder builder() {
     return new Builder();
   }

@@ -1,6 +1,6 @@
 package gz.dmndev.restaurant.menu.boot;
 
-import gz.dmndev.restaurant.commonsecurity.EnableResourceServerSecurity;
+import gz.dmndev.restaurant.common.security.EnableResourceServerSecurity;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;

@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @Configuration
 @EnableMongoRepositories(
-    basePackages = "gz.dmndev.restaurant.menuinfrastructure.adapter.out.persistence")
+    basePackages = "gz.dmndev.restaurant.menu.infrastructure.adapter.out.persistence")
 @EnableMongoAuditing
 public class MongoConfig {}

@@ -1,0 +1,41 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+    import: ""
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration
+  kafka:
+    bootstrap-servers: localhost:9092
+    enabled: false
+  flyway:
+    enabled: false
+
+eureka:
+  client:
+    enabled: false
+
+restaurant:
+  security:
+    enabled: false
+
+menu-service:
+  url: http://localhost:${wiremock.server.port}

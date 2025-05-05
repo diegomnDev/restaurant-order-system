@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>menu-domain</artifactId>
-    <name>Menu Domain</name>
-    <description>Domain model and business rules for menu service</description>
+    <name>Order Domain</name>
+    <description>Domain model and business rules for order service</description>
 
 </project>

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "item-brisket-bites",
+    "name": "Brisket Bites",
+    "description": "Slow-cooked beef brisket, crispy on the outside, juicy inside.",
+    "price": 6.50,
+    "category": {
+      "id": "cat-starters",
+      "name": "Starters",
+      "description": "Tasty bites to begin your meal.",
+      "displayOrder": 1,
+      "active": true
+    },
+    "tags": [
+      "beef",
+      "starter"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "imageUrl": "/images/starters/brisket-bites.jpg"
+  },
+  {
+    "id": "item-double-cheddar-burger",
+    "name": "Double Cheddar Burger",
+    "description": "Two 150g beef patties, double cheddar, caramelized onions, brioche bun.",
+    "price": 12.90,
+    "category": {
+      "id": "cat-burgers",
+      "name": "Burgers",
+      "description": "Gourmet burgers made with premium ingredients.",
+      "displayOrder": 2,
+      "active": true
+    },
+    "tags": [
+      "burger",
+      "beef",
+      "cheddar"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "available": true,
+    "imageUrl": "/images/burgers/double-cheddar.jpg"
+  },
+  {
+    "id": "item-chicken-wrap",
+    "name": "Grilled Chicken Wrap",
+    "description": "Grilled chicken breast, lettuce, tomato, garlic sauce, soft tortilla.",
+    "price": 9.90,
+    "category": {
+      "id": "cat-nonburgers",
+      "name": "Non-Burger Mains",
+      "description": "Main dishes beyond burgers.",
+      "displayOrder": 3,
+      "active": true
+    },
+    "tags": [
+      "chicken",
+      "wrap"
+    ],
+    "allergens": [
+      "gluten",
+      "egg"
+    ],
+    "available": true,
+    "imageUrl": "/images/nonburgers/chicken-wrap.jpg"
+  },
+  {
+    "id": "item-loaded-fries",
+    "name": "Loaded Fries",
+    "description": "Crispy fries topped with cheddar, bacon, and jalapeños.",
+    "price": 5.90,
+    "category": {
+      "id": "cat-sides",
+      "name": "Fries & Sides",
+      "description": "Perfect sides to complete your meal.",
+      "displayOrder": 4,
+      "active": true
+    },
+    "tags": [
+      "fries",
+      "bacon",
+      "cheese"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "imageUrl": "/images/sides/loaded-fries.jpg"
+  },
+  {
+    "id": "item-brownie",
+    "name": "Chocolate Fudge Brownie",
+    "description": "Rich chocolate brownie with vanilla ice cream.",
+    "price": 4.80,
+    "category": {
+      "id": "cat-desserts",
+      "name": "Desserts",
+      "description": "Sweet endings to your gourmet experience.",
+      "displayOrder": 5,
+      "active": true
+    },
+    "tags": [
+      "dessert",
+      "chocolate"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy",
+      "egg"
+    ],
+    "available": true,
+    "imageUrl": "/images/desserts/brownie.jpg"
+  },
+  {
+    "id": "item-homemade-lemonade",
+    "name": "Homemade Lemonade",
+    "description": "Freshly squeezed lemon, mint, and sparkling water.",
+    "price": 2.90,
+    "category": {
+      "id": "cat-drinks",
+      "name": "Drinks",
+      "description": "Refreshing beverages for every taste.",
+      "displayOrder": 6,
+      "active": true
+    },
+    "tags": [
+      "drink",
+      "lemonade"
+    ],
+    "allergens": [],
+    "available": true,
+    "imageUrl": "/images/drinks/lemonade.jpg"
+  },
+  {
+    "id": "item-truffle-burger",
+    "name": "Truffle Burger",
+    "description": "Beef patty with black truffle mayo, rocket, manchego cheese.",
+    "price": 14.50,
+    "category": {
+      "id": "cat-specials",
+      "name": "Specials",
+      "description": "Limited-time chef specials.",
+      "displayOrder": 7,
+      "active": true
+    },
+    "tags": [
+      "burger",
+      "truffle",
+      "special"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "available": true,
+    "imageUrl": "/images/specials/truffle-burger.jpg"
+  },
+  {
+    "id": "item-kids-cheeseburger",
+    "name": "Kids Cheeseburger",
+    "description": "100g beef patty, cheddar, soft bun. Served with fries.",
+    "price": 6.90,
+    "category": {
+      "id": "cat-kids",
+      "name": "Kids Menu",
+      "description": "Delicious and fun meals for children.",
+      "displayOrder": 8,
+      "active": true
+    },
+    "tags": [
+      "kids",
+      "burger"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "available": true,
+    "imageUrl": "/images/kids/kids-cheeseburger.jpg"
+  }
+]

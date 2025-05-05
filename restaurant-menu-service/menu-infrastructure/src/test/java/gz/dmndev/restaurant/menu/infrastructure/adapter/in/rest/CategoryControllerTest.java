@@ -196,11 +196,20 @@ class CategoryControllerTest {
   @Test
   void updateCategory_WhenExists_ShouldUpdateAndReturnCategory() throws Exception {
     // Arrange
+    Category updatedCategory =
+        Category.builder()
+            .id("category-1")
+            .name("Appetizers Updated")
+            .displayOrder(1)
+            .active(true)
+            .build();
+
     when(getCategoryUseCase.getCategoryById("category-1")).thenReturn(Optional.of(category));
-    doNothing()
-        .when(mapper)
-        .updateDomainFromRequest(any(Category.class), any(CategoryRequest.class));
-    when(updateCategoryUseCase.updateCategory(any(Category.class))).thenReturn(category);
+
+    when(mapper.updateDomainFromRequest(any(Category.class), any(CategoryRequest.class)))
+        .thenReturn(updatedCategory);
+
+    when(updateCategoryUseCase.updateCategory(any(Category.class))).thenReturn(updatedCategory);
     when(mapper.toResponse(any(Category.class)))
         .thenReturn(
             CategoryResponse.builder()
@@ -217,9 +226,13 @@ class CategoryControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(categoryRequest)))
         .andExpect(status().isOk())
-        .andExpect(jsonPath("$.id").value("category-1"));
+        .andExpect(jsonPath("$.id").value("category-1"))
+        .andExpect(jsonPath("$.name").value("Appetizers Updated"));
 
+    // Verificaciones adicionales
+    verify(mapper).updateDomainFromRequest(any(Category.class), any(CategoryRequest.class));
     verify(updateCategoryUseCase).updateCategory(any(Category.class));
+    verify(mapper).toResponse(any(Category.class));
   }
 
   @Test

@@ -48,7 +48,7 @@
         <redis.version>4.1.1</redis.version>
 
         <!-- OpenAPI -->
-        <springdoc-openapi.version>2.8.6</springdoc-openapi.version>
+        <springdoc-openapi.version>2.8.8</springdoc-openapi.version>
 
         <!-- Security -->
         <keycloak.version>25.0.3</keycloak.version>
@@ -61,8 +61,8 @@
 
         <!-- Testing -->
         <testcontainers.version>1.21.0</testcontainers.version>
-        <cucumber.version>7.22.0</cucumber.version>
-        <junit-jupiter.version>5.13.0-M2</junit-jupiter.version>
+        <cucumber.version>7.22.1</cucumber.version>
+        <junit-jupiter.version>5.13.0-M3</junit-jupiter.version>
         <mockito.version>5.17.0</mockito.version>
         <wiremock-standalone.version>3.13.0</wiremock-standalone.version>
         <wiremock-spring-boot.version>3.10.0</wiremock-spring-boot.version>

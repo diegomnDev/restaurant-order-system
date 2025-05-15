@@ -3,9 +3,11 @@ package gz.dmndev.restaurant.common.messaging.event;
 import java.time.LocalDateTime;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
-@Setter
 @Getter
+@Setter
+@SuperBuilder
 public abstract class BaseEvent {
   private String eventId;
   private String eventType;

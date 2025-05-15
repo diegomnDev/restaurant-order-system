@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>gz.dmndev.restaurant</groupId>
+        <artifactId>restaurant-order-system</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>restaurant-kitchen-service</artifactId>
+    <packaging>pom</packaging>
+    <name>Restaurant Kitchen Service</name>
+    <description>Service for managing restaurant kitchen</description>
+
+    <modules>
+        <module>kitchen-domain</module>
+        <module>kitchen-application</module>
+        <module>kitchen-infrastructure</module>
+        <module>kitchen-boot</module>
+    </modules>
+
+</project>
